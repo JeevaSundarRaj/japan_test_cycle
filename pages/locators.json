@@ -1,0 +1,16 @@
+{
+  "makeCallButton": "//button[@data-qa='header-cta-call']",
+  "callSearch": "//input[@id='search-input']",
+  "hangUpButton": "//*[@data-name='Phone Hang Up']",
+  "answerCallButton": "//button[contains(@class, 'd-btn--positive') and .//span[text()='応答']]",
+  "activeCall": "//div[contains(@class,'callbar-floating__control-buttons')]",
+  "sidebarLink": "//*[@id='LeftbarSection__listContainerId0']//a[contains(.,'{}')]",
+  "conversationTabs": "//*[@id='center-column']//*[@role='tab']",
+  "incomingNotification": "//*[contains(text(),'への着信')]",
+  "acceptButton": "//button[contains(@class, 'd-btn--positive') and .//span[text()='承諾']]",
+  "transferButton": "//button[@id='transfer-button-btn']",
+  "transferSearch": "//input[@id='transfer-search-input']",
+  "transferTarget": "//button[contains(@class,'transfer-suggest-item-button')][contains(.,'{}')]",
+  "transferConfirm": "//button[@id='dialog-button-transfer-btn']",
+  "callResult": "//tr[.//*[contains(@class,'il-name-text')][contains(.,'{}')]]//button[@aria-label='通話を開始']"
+}

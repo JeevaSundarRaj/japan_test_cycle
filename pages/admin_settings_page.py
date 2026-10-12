@@ -1,4 +1,4 @@
-from playwright.sync_api import Page
+from playwright.sync_api import Page, TimeoutError as PlaywrightTimeoutError, expect
 
 
 class AdminSettingsPage:
@@ -17,16 +17,32 @@ class AdminSettingsPage:
         self.admin_link.click()
 
     def remove_existing_pairing(self) -> None:
-        if self.delete_pairing.count():
-            self.delete_pairing.first.click()
+        self.setup_pairing.wait_for()
+        delete = self.delete_pairing
+        confirm = self.page.get_by_role("dialog").get_by_role("button", name="削除")
+        # Existing pairings render after the page shell; give them a moment before concluding there are none.
+        try:
+            delete.first.wait_for(timeout=5000)
+        except PlaywrightTimeoutError:
+            return
+        while delete.count():
+            remaining = delete.count()
+            delete.first.click()
+            try:
+                confirm.first.click(timeout=2000)
+            except PlaywrightTimeoutError:
+                pass
+            expect(delete).to_have_count(remaining - 1)
 
-    def pair(self, executive: str, assistant: str, permission_indexes=(3, 4, 5)) -> None:
+    def add_pairing(self, executive: str, assistant: str) -> None:
         self.setup_pairing.click()
         self.executive_input.fill(executive)
         self.page.get_by_title(executive, exact=False).first.click()
         self.assistant_input.fill(assistant)
         self.page.get_by_title(assistant, exact=False).first.click()
         self.add_button.click()
+
+    def enable_permissions(self, permission_indexes=(3, 4, 5)) -> None:
         for i in permission_indexes:
             self.checkboxes.nth(i).check()
         self.save_button.click()
