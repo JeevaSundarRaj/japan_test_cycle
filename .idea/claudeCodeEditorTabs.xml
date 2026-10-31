@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ClaudeCodeEditorTabs">
-    <option name="activeSessionId" value="af128b6f-c2b7-43a7-a196-5f76053ebfc7" />
+    <option name="activeSessionId" value="8a094593-3461-47a6-9b66-78dca648b64b" />
     <option name="openSessionIds">
       <list>
         <option value="bd7ccdf2-d14d-4f22-9920-2d26c2cb4c38" />
@@ -45,6 +45,8 @@
         <option value="3c2a141d-0a27-4fb6-991f-1657026bf3ae" />
         <option value="26829463-0dec-469c-977b-837c46c46092" />
         <option value="af128b6f-c2b7-43a7-a196-5f76053ebfc7" />
+        <option value="ee314030-fe43-4de6-a094-313437567457" />
+        <option value="8a094593-3461-47a6-9b66-78dca648b64b" />
       </list>
     </option>
     <option name="sessionPaths">
@@ -76,6 +78,7 @@
         <entry key="67fa55ad-ba32-4430-af66-61c5dce30e82" value="/sessions/594e571c-1c05-4f3b-96c6-5e5d252908fb" />
         <entry key="6dadd9ab-0bb0-4334-8a47-290b2e985ba2" value="/sessions/5d923b8c-7a82-4f71-99a9-36bf36fcc123" />
         <entry key="827c965e-b4bc-4fbf-98db-b13de1916a9b" value="/sessions/5fc00d66-0238-46ca-bc31-0e1a6e2e4ad0" />
+        <entry key="8a094593-3461-47a6-9b66-78dca648b64b" value="/sessions/0963c85c-aae8-4a4e-9ba5-7fa44091d098" />
         <entry key="8bb76cfb-ae34-4c84-baf0-3a840e845729" value="/sessions/fd3e6086-96f1-4d05-8dc3-b82e52c7728a" />
         <entry key="95898c45-3063-46b8-ad31-da0158cb3ea7" value="/sessions/239131d5-8e38-44a4-8cf6-00ebcfb1fcc0" />
         <entry key="9bb75a45-9e8a-4dea-be66-915309f946b3" value="/sessions/6106bc17-b271-4084-8d9d-6749417d5255" />
@@ -90,6 +93,7 @@
         <entry key="d542786d-ceb7-492a-80cb-15ef1405ddd0" value="/sessions/ba838757-7bb4-431e-a784-918cedfcb3d5" />
         <entry key="d78788ac-ed5e-4398-bd68-08fe32633dba" value="/sessions/b0205fdd-f3b9-4f7c-ac14-7f3fa87b22e5" />
         <entry key="eba8625b-6deb-43ed-a006-a08dbd1f812c" value="/sessions/2f4c5cb5-40db-42b2-b6f3-720a593aef15" />
+        <entry key="ee314030-fe43-4de6-a094-313437567457" value="/sessions/dcaec939-d304-444b-bad1-cf22bdf72e23" />
       </map>
     </option>
     <option name="sessionTitles">
@@ -121,6 +125,7 @@
         <entry key="67fa55ad-ba32-4430-af66-61c5dce30e82" value="The user selected the lines 1 to 72 from tests/tes" />
         <entry key="6dadd9ab-0bb0-4334-8a47-290b2e985ba2" value="after entering the letter in input please click on" />
         <entry key="827c965e-b4bc-4fbf-98db-b13de1916a9b" value="saerch for lite 2 user after login then send the m" />
+        <entry key="8a094593-3461-47a6-9b66-78dca648b64b" value="Lite 1 outbound call test failure" />
         <entry key="8bb76cfb-ae34-4c84-baf0-3a840e845729" value="it is pass know, after the user 3 attend the call" />
         <entry key="95898c45-3063-46b8-ad31-da0158cb3ea7" value="playwright install" />
         <entry key="9bb75a45-9e8a-4dea-be66-915309f946b3" value="The user selected the lines 1 to 69 from tests/tes" />
@@ -135,6 +140,7 @@
         <entry key="d542786d-ceb7-492a-80cb-15ef1405ddd0" value="install jave using brew" />
         <entry key="d78788ac-ed5e-4398-bd68-08fe32633dba" value="$PROJECT_DIR$/.venv/bin/python" />
         <entry key="eba8625b-6deb-43ed-a006-a08dbd1f812c" value="Pytest codegen www.dialpadbeta.com" />
+        <entry key="ee314030-fe43-4de6-a094-313437567457" value="Playwrite codegen command" />
       </map>
     </option>
   </component>

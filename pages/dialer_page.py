@@ -28,7 +28,9 @@ class DialerPage:
     def call(self, name: str, locator: str = "callResult") -> None:
         self.make_call_button.click()
         self.call_search.fill(name)
-        self.page.locator(LOCATORS[locator].format(name if locator == "callResult" else name.lower())).first.click()
+        # The first DOM match can be a hidden duplicate row; click the visible one.
+        result = self.page.locator(LOCATORS[locator].format(name if locator == "callResult" else name.lower()))
+        result.filter(visible=True).first.click()
 
     def call_number(self, number: str) -> None:
         """Dial a raw phone number (e.g. a main line) from the call search box."""
