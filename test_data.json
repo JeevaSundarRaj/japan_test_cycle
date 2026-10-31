@@ -1,6 +1,9 @@
 {
   "executive": "lite 1 JP",
   "assistant": "Lite 2 JP",
+  "mainline_number": "050-1749-9614",
+  "mainline_name": "JP_Test_PRO_Oct7",
+  "cc_name": "test cc",
   "app_url": "https://dialpadbeta.com/app",
   "assistant_notification_text": "lite 1 JP への着信",
   "transfer_notification_text": "転送 from"

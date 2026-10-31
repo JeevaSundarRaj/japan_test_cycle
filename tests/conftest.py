@@ -35,3 +35,22 @@ def credentials():
 @pytest.fixture(scope="session")
 def test_data():
     return json.loads(TEST_DATA_FILE.read_text())
+
+
+def pytest_terminal_summary(terminalreporter):
+    """Print a QA-style PASSED/FAILED line per test at the end of the run."""
+    tr = terminalreporter
+    rows = []
+    for outcome in ("passed", "failed", "error", "skipped"):
+        for rep in tr.stats.get(outcome, []):
+            if rep.when != "call" and outcome in ("passed",):
+                continue
+            name = rep.nodeid.split("::")[-1].split("[")[0].removeprefix("test_")
+            rows.append((name, outcome.upper()))
+    if not rows:
+        return
+    tr.write_sep("=", "QA TEST RESULT")
+    for name, status in rows:
+        tr.write_line(f"{name:<45} {status}")
+    passed = sum(1 for _, s in rows if s == "PASSED")
+    tr.write_line(f"\nTotal: {len(rows)}  Passed: {passed}  Failed: {len(rows) - passed}")
