@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ClaudeCodeEditorTabs">
+    <option name="activeSessionId" value="2a5b1c85-c49c-4fc0-9aa1-58b5e9cde352" />
+    <option name="openSessionIds">
+      <list>
+        <option value="e213b9bf-020f-4e74-bb7f-2ab1e00f6abf" />
+        <option value="bd7ccdf2-d14d-4f22-9920-2d26c2cb4c38" />
+        <option value="95898c45-3063-46b8-ad31-da0158cb3ea7" />
+        <option value="2b0f4fb7-194a-4750-82b5-9c69b60b8855" />
+        <option value="c5fba1af-c7f2-40de-a80c-18a34868626d" />
+        <option value="3a7debf0-7bcb-49e0-b784-e601ba715033" />
+        <option value="36e767e5-3775-4869-a016-d0e575a3ea3a" />
+        <option value="a927ce8c-6b91-4af0-9a07-4f5a8fd1103b" />
+        <option value="2a5b1c85-c49c-4fc0-9aa1-58b5e9cde352" />
+      </list>
+    </option>
+    <option name="sessionPaths">
+      <map>
+        <entry key="2a5b1c85-c49c-4fc0-9aa1-58b5e9cde352" value="/sessions/49525c12-2829-4314-9045-8f4e24284a60" />
+        <entry key="2b0f4fb7-194a-4750-82b5-9c69b60b8855" value="/sessions/a085cf79-14a2-415e-b3b4-7a57a98bb99c" />
+        <entry key="36e767e5-3775-4869-a016-d0e575a3ea3a" value="/sessions/44fd710f-4db2-435f-93eb-72394a24d78d" />
+        <entry key="3a7debf0-7bcb-49e0-b784-e601ba715033" value="/sessions/32f2a348-90e3-4521-824e-6d07603aaa88" />
+        <entry key="95898c45-3063-46b8-ad31-da0158cb3ea7" value="/sessions/239131d5-8e38-44a4-8cf6-00ebcfb1fcc0" />
+        <entry key="a927ce8c-6b91-4af0-9a07-4f5a8fd1103b" value="/sessions/new" />
+        <entry key="bd7ccdf2-d14d-4f22-9920-2d26c2cb4c38" value="/sessions/f5abc6e0-f4cb-4d96-8783-baba566b510f" />
+        <entry key="c5fba1af-c7f2-40de-a80c-18a34868626d" value="/sessions/b1cd52cc-2c3e-4e8b-ae04-eb8fafd07109" />
+        <entry key="e213b9bf-020f-4e74-bb7f-2ab1e00f6abf" value="/sessions/e3b765b0-fd60-4b27-8462-a6c8a9531864" />
+      </map>
+    </option>
+    <option name="sessionTitles">
+      <map>
+        <entry key="2a5b1c85-c49c-4fc0-9aa1-58b5e9cde352" value="$PROJECT_DIR$/.venv/bin/python" />
+        <entry key="2b0f4fb7-194a-4750-82b5-9c69b60b8855" value="$PROJECT_DIR$/.venv/bin/python" />
+        <entry key="36e767e5-3775-4869-a016-d0e575a3ea3a" value="where is user_cred.json file?" />
+        <entry key="3a7debf0-7bcb-49e0-b784-e601ba715033" value="how to add credentials" />
+        <entry key="95898c45-3063-46b8-ad31-da0158cb3ea7" value="playwright install" />
+        <entry key="a927ce8c-6b91-4af0-9a07-4f5a8fd1103b" value="Claude Code" />
+        <entry key="bd7ccdf2-d14d-4f22-9920-2d26c2cb4c38" value="remove whatever you added" />
+        <entry key="c5fba1af-c7f2-40de-a80c-18a34868626d" value="$PROJECT_DIR$/.venv/bin/python" />
+        <entry key="e213b9bf-020f-4e74-bb7f-2ab1e00f6abf" value="give me code gen code" />
+      </map>
+    </option>
+  </component>
+</project>

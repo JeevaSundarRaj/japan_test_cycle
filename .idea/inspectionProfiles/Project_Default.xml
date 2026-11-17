@@ -1,0 +1,45 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <list>
+          <option value="Brotli" />
+          <option value="certifi" />
+          <option value="cffi" />
+          <option value="charset-normalizer" />
+          <option value="click" />
+          <option value="configreader" />
+          <option value="et_xmlfile" />
+          <option value="greenlet" />
+          <option value="idna" />
+          <option value="iniconfig" />
+          <option value="markdown2" />
+          <option value="MarkupSafe" />
+          <option value="minijinja" />
+          <option value="numpy" />
+          <option value="openpyxl" />
+          <option value="packaging" />
+          <option value="page" />
+          <option value="pillow" />
+          <option value="playwright" />
+          <option value="pluggy" />
+          <option value="pycparser" />
+          <option value="pyee" />
+          <option value="Pygments" />
+          <option value="pyobjc-core" />
+          <option value="pyobjc-framework-Cocoa" />
+          <option value="pyobjc-framework-Quartz" />
+          <option value="pyperclipimg" />
+          <option value="pytest" />
+          <option value="PyYAML" />
+          <option value="requests" />
+          <option value="sounddevice" />
+          <option value="soundfile" />
+          <option value="typing_extensions" />
+          <option value="urllib3" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
