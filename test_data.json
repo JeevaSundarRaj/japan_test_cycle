@@ -6,5 +6,7 @@
   "cc_name": "test cc",
   "app_url": "https://dialpadbeta.com/app",
   "assistant_notification_text": "lite 1 JP への着信",
-  "transfer_notification_text": "転送 from"
+  "transfer_notification_text": "転送 from",
+  "support_default_persona": "Support JP",
+  "transcript_wait_seconds": 30
 }
