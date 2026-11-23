@@ -37,7 +37,19 @@ jobs:
       # pytest.ini uses --headed, so run under a virtual display.
       # Transcription summary test depends on the call test, so keep file order.
       - name: Run tests
-        run: xvfb-run -a pytest -p no:randomly
+        run: xvfb-run -a pytest -p no:randomly --timeout=600 --junitxml=report.xml
+
+      - name: Test report
+        if: always()
+        run: python scripts/report.py report.xml | tee -a "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: report
+          path: report.xml
+          if-no-files-found: ignore
 
       - name: Upload screenshots
         if: always()
