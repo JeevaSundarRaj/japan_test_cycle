@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ClaudeCodeEditorTabs">
-    <option name="activeSessionId" value="179da92b-6e70-4b8e-811f-ac7335405717" />
+    <option name="activeSessionId" value="d9c3c0a5-bc39-49b5-8d6f-5d8157de21e9" />
     <option name="openSessionIds">
       <list>
         <option value="bd7ccdf2-d14d-4f22-9920-2d26c2cb4c38" />
@@ -65,6 +65,7 @@
         <option value="4b0a9647-b6b5-4fb5-941b-97e6e07acd9c" />
         <option value="be93e569-fd69-4072-9745-674544b3846f" />
         <option value="179da92b-6e70-4b8e-811f-ac7335405717" />
+        <option value="d9c3c0a5-bc39-49b5-8d6f-5d8157de21e9" />
       </list>
     </option>
     <option name="sessionPaths">
@@ -125,6 +126,7 @@
         <entry key="c7574a87-f21e-4f56-8bd0-41050fd6b1f8" value="/sessions/3f02e80d-2b3a-466b-9d1c-61f008821857" />
         <entry key="d542786d-ceb7-492a-80cb-15ef1405ddd0" value="/sessions/ba838757-7bb4-431e-a784-918cedfcb3d5" />
         <entry key="d78788ac-ed5e-4398-bd68-08fe32633dba" value="/sessions/b0205fdd-f3b9-4f7c-ac14-7f3fa87b22e5" />
+        <entry key="d9c3c0a5-bc39-49b5-8d6f-5d8157de21e9" value="/sessions/0a8fb4b2-58d5-45e2-b8f6-eeb32882f53c" />
         <entry key="dc0b99ba-531e-4ffe-b4ac-5b0fc2576d23" value="/sessions/51c9a3a8-8083-488d-a65d-59f3c5eaf5ad" />
         <entry key="de5a83fb-8d85-42ce-b081-2f493fd430c9" value="/sessions/705115cd-b9fa-4368-b165-aabe637bf430" />
         <entry key="e2ec4faf-bdbe-42a4-9822-a34d6e77f70c" value="/sessions/ccdf89b7-57dc-4aee-bed6-af6d14c1e569" />
@@ -190,6 +192,7 @@
         <entry key="c7574a87-f21e-4f56-8bd0-41050fd6b1f8" value="The user selected the lines 1 to 750 from tests/te" />
         <entry key="d542786d-ceb7-492a-80cb-15ef1405ddd0" value="install jave using brew" />
         <entry key="d78788ac-ed5e-4398-bd68-08fe32633dba" value="$PROJECT_DIR$/.venv/bin/python" />
+        <entry key="d9c3c0a5-bc39-49b5-8d6f-5d8157de21e9" value="Credentials file JSON decode error in conftest" />
         <entry key="dc0b99ba-531e-4ffe-b4ac-5b0fc2576d23" value="Test_departent_voicemail" />
         <entry key="de5a83fb-8d85-42ce-b081-2f493fd430c9" value="$PROJECT_DIR$/.venv/bin/python" />
         <entry key="e2ec4faf-bdbe-42a4-9822-a34d6e77f70c" value="$PROJECT_DIR$/.venv/bin/python" />
