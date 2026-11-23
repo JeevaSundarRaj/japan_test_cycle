@@ -147,6 +147,8 @@ class DialerPage:
         expect(popup).to_be_visible(timeout=timeout)
 
     def answer(self) -> None:
+        # Notification text can match elsewhere on the page; wait for the real popup button.
+        expect(self.answer_button.first).to_be_visible(timeout=60000)
         self.close_new_call_overlay()
         # Backgrounded/occluded headed windows stop rendering frames, which hangs Playwright's
         # scroll-into-view step; focus the page first and fall back to a DOM click.
