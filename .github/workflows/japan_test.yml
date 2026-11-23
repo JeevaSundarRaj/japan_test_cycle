@@ -9,6 +9,9 @@ jobs:
   test:
     runs-on: ubuntu-latest
     timeout-minutes: 120
+    env:
+      DIALPAD_EMAIL: ${{ secrets.DIALPAD_EMAIL }}
+      DIALPAD_PASSWORD: ${{ secrets.DIALPAD_PASSWORD }}
     steps:
       - uses: actions/checkout@v4
 
@@ -27,12 +30,13 @@ jobs:
         env:
           CREDENTIALS_JSON: ${{ secrets.CREDENTIALS_JSON }}
         run: |
-          if [ -z "$CREDENTIALS_JSON" ]; then
-            echo "::error::Secret CREDENTIALS_JSON is empty or not set (Settings > Secrets and variables > Actions)"
+          if [ -n "$CREDENTIALS_JSON" ]; then
+            printf '%s' "$CREDENTIALS_JSON" > credentials.json
+            python -c "import json; json.load(open('credentials.json'))"
+          elif [ -z "$DIALPAD_EMAIL" ] || [ -z "$DIALPAD_PASSWORD" ]; then
+            echo "::error::Set secret CREDENTIALS_JSON, or both DIALPAD_EMAIL and DIALPAD_PASSWORD"
             exit 1
           fi
-          printf '%s' "$CREDENTIALS_JSON" > credentials.json
-          python -c "import json; json.load(open('credentials.json'))"
 
       # pytest.ini uses --headed, so run under a virtual display.
       # Transcription summary test depends on the call test, so keep file order.
