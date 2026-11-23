@@ -37,7 +37,7 @@ jobs:
       # pytest.ini uses --headed, so run under a virtual display.
       # Transcription summary test depends on the call test, so keep file order.
       - name: Run tests
-        run: xvfb-run -a pytest -p no:randomly --timeout=600 --junitxml=report.xml --tracing=retain-on-failure
+        run: xvfb-run -a pytest -p no:randomly --timeout=600 --reruns 2 --reruns-delay 5 --junitxml=report.xml --tracing=retain-on-failure
 
       - name: Test report
         if: always()

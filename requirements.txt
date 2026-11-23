@@ -5,3 +5,4 @@ Pygments==2.21.0
 pytest==9.1.1
 pytest-playwright
 pytest-timeout
+pytest-rerunfailures
