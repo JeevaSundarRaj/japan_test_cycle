@@ -13,11 +13,11 @@ for tc in ET.parse(path).getroot().iter("testcase"):
     name = tc.get("name")
     time = float(tc.get("time") or 0)
     if tc.find("failure") is not None:
-        status, note = "❌ FAILED", (tc.find("failure").get("message") or "")[:120]
+        status, note = "❌ FAILED", (tc.find("failure").get("message") or "")[:400]
     elif tc.find("error") is not None:
-        status, note = "❌ ERROR", (tc.find("error").get("message") or "")[:120]
+        status, note = "❌ ERROR", (tc.find("error").get("message") or "")[:400]
     elif tc.find("skipped") is not None:
-        status, note = "⏭️ SKIPPED", (tc.find("skipped").get("message") or "")[:120]
+        status, note = "⏭️ SKIPPED", (tc.find("skipped").get("message") or "")[:400]
     else:
         status, note = "✅ PASSED", ""
     rows.append((name, status, time, note.replace("|", "\\|").replace("\n", " ")))
