@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ClaudeCodeEditorTabs">
-    <option name="activeSessionId" value="be93e569-fd69-4072-9745-674544b3846f" />
+    <option name="activeSessionId" value="179da92b-6e70-4b8e-811f-ac7335405717" />
     <option name="openSessionIds">
       <list>
         <option value="bd7ccdf2-d14d-4f22-9920-2d26c2cb4c38" />
@@ -64,6 +64,7 @@
         <option value="78d90400-71c3-4238-9488-79f59616aad0" />
         <option value="4b0a9647-b6b5-4fb5-941b-97e6e07acd9c" />
         <option value="be93e569-fd69-4072-9745-674544b3846f" />
+        <option value="179da92b-6e70-4b8e-811f-ac7335405717" />
       </list>
     </option>
     <option name="sessionPaths">
@@ -75,6 +76,7 @@
         <entry key="0db4c93a-dfc2-4321-b3c5-5d718a6b45d3" value="/sessions/2dc26858-97b8-4667-96c9-a3c917e02b07" />
         <entry key="0e833739-034f-4ac1-acdb-8155b1247959" value="/sessions/c7e506aa-3a32-4ab5-87c0-eb6086826fb5" />
         <entry key="0f72511a-3f25-4de5-9324-e71190c700dc" value="/sessions/e6883c99-ccdb-4bbf-ad95-33dfb02e7e04" />
+        <entry key="179da92b-6e70-4b8e-811f-ac7335405717" value="/sessions/43baedc9-9f9d-42a2-ae5e-171715f89f51" />
         <entry key="19e3b614-bc8a-432f-9dc8-ca13f56f1344" value="/sessions/511a92f1-e3c5-4554-aa9e-c30479dd11f2" />
         <entry key="1aaa0196-2456-4a63-813a-961322746723" value="/sessions/763f4779-38a8-4e63-9c21-702932c2a5ec" />
         <entry key="1c41b6b7-1c71-459c-b6f7-7eaf45ccfde9" value="/sessions/d2025462-972d-4a8e-b3d9-aae7f6c0f31a" />
@@ -139,6 +141,7 @@
         <entry key="0db4c93a-dfc2-4321-b3c5-5d718a6b45d3" value="Japan_test_cycle repo migration" />
         <entry key="0e833739-034f-4ac1-acdb-8155b1247959" value="$PROJECT_DIR$/.venv/bin/python" />
         <entry key="0f72511a-3f25-4de5-9324-e71190c700dc" value="what is this assistant_app_page?" />
+        <entry key="179da92b-6e70-4b8e-811f-ac7335405717" value="Test_call_transcription.py test coverage" />
         <entry key="19e3b614-bc8a-432f-9dc8-ca13f56f1344" value="$PROJECT_DIR$/.venv/bin/python" />
         <entry key="1aaa0196-2456-4a63-813a-961322746723" value="$PROJECT_DIR$/.venv/bin/python" />
         <entry key="1c41b6b7-1c71-459c-b6f7-7eaf45ccfde9" value="add another test case sms_mms_check send message f" />
