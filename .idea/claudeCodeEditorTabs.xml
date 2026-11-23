@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ClaudeCodeEditorTabs">
-    <option name="activeSessionId" value="a918ba85-8d29-471b-8fa6-7107fea93717" />
+    <option name="activeSessionId" value="be93e569-fd69-4072-9745-674544b3846f" />
     <option name="openSessionIds">
       <list>
         <option value="bd7ccdf2-d14d-4f22-9920-2d26c2cb4c38" />
@@ -51,6 +51,19 @@
         <option value="28e5592d-afc5-45d1-82f0-f82f67b9eeda" />
         <option value="dc0b99ba-531e-4ffe-b4ac-5b0fc2576d23" />
         <option value="a918ba85-8d29-471b-8fa6-7107fea93717" />
+        <option value="0db4c93a-dfc2-4321-b3c5-5d718a6b45d3" />
+        <option value="7e409dee-ed7f-4c36-bce1-b9ff0c7cbc17" />
+        <option value="b1136582-d1d3-40d2-adf5-7c43790ef752" />
+        <option value="0e833739-034f-4ac1-acdb-8155b1247959" />
+        <option value="2460eb29-e4fe-40fc-a7c8-7e0e2f1a80ec" />
+        <option value="355adb6f-d2e2-4af2-a01a-84e6f0ea2c16" />
+        <option value="4043b87f-8cb6-4f73-b5d6-d448a99228aa" />
+        <option value="ad9340f7-4c06-4def-b469-895fffe45e1e" />
+        <option value="e2ec4faf-bdbe-42a4-9822-a34d6e77f70c" />
+        <option value="de5a83fb-8d85-42ce-b081-2f493fd430c9" />
+        <option value="78d90400-71c3-4238-9488-79f59616aad0" />
+        <option value="4b0a9647-b6b5-4fb5-941b-97e6e07acd9c" />
+        <option value="be93e569-fd69-4072-9745-674544b3846f" />
       </list>
     </option>
     <option name="sessionPaths">
@@ -59,11 +72,14 @@
         <entry key="04d6160c-4d05-458c-9274-ac4d9b777ba0" value="/sessions/ec998e0c-7cba-4228-aaf7-e7897dd79d47" />
         <entry key="06eb76dc-ecd6-43c5-a870-0a65aa494b66" value="/sessions/84d862d4-6495-4419-9bff-9a4e8187184a" />
         <entry key="0c705819-5be0-4377-a92f-896346d597d9" value="/sessions/7d727180-b6b3-4cc8-9d63-3c127f12abe7" />
+        <entry key="0db4c93a-dfc2-4321-b3c5-5d718a6b45d3" value="/sessions/2dc26858-97b8-4667-96c9-a3c917e02b07" />
+        <entry key="0e833739-034f-4ac1-acdb-8155b1247959" value="/sessions/c7e506aa-3a32-4ab5-87c0-eb6086826fb5" />
         <entry key="0f72511a-3f25-4de5-9324-e71190c700dc" value="/sessions/e6883c99-ccdb-4bbf-ad95-33dfb02e7e04" />
         <entry key="19e3b614-bc8a-432f-9dc8-ca13f56f1344" value="/sessions/511a92f1-e3c5-4554-aa9e-c30479dd11f2" />
         <entry key="1aaa0196-2456-4a63-813a-961322746723" value="/sessions/763f4779-38a8-4e63-9c21-702932c2a5ec" />
         <entry key="1c41b6b7-1c71-459c-b6f7-7eaf45ccfde9" value="/sessions/d2025462-972d-4a8e-b3d9-aae7f6c0f31a" />
         <entry key="1d623e2a-9c22-4439-bfd3-a82c2f1b3edf" value="/sessions/f7d72ad3-ac02-416e-92ec-9c33193448ac" />
+        <entry key="2460eb29-e4fe-40fc-a7c8-7e0e2f1a80ec" value="/sessions/f64240b0-518c-4ef5-be96-cb6a070e5d4e" />
         <entry key="24d44d9e-dcf5-4283-acea-377dc198f2c1" value="/sessions/new" />
         <entry key="26829463-0dec-469c-977b-837c46c46092" value="/sessions/38610c01-da52-433f-aba0-5c1c7126b30f" />
         <entry key="2697dc6c-281b-46f0-be8c-0154807fae19" value="/sessions/201f9097-1b6b-431b-a44a-9320ede861e7" />
@@ -71,18 +87,23 @@
         <entry key="2b0f4fb7-194a-4750-82b5-9c69b60b8855" value="/sessions/a085cf79-14a2-415e-b3b4-7a57a98bb99c" />
         <entry key="2d8c61c7-ada6-4306-8899-8b3038408a22" value="/sessions/a080f649-f051-43be-beb9-709a742f9b85" />
         <entry key="2f0c1175-9fc5-4c09-8828-b9b26dc59f28" value="/sessions/3db728cb-be91-46f0-8b37-126e02a3528c" />
+        <entry key="355adb6f-d2e2-4af2-a01a-84e6f0ea2c16" value="/sessions/96efb136-d0f7-4316-9fa5-c194363f5d5a" />
         <entry key="3675757b-5833-4ffc-950f-2cab28530851" value="/sessions/015b970b-677e-476b-a6c3-6e0fc0140324" />
         <entry key="36e767e5-3775-4869-a016-d0e575a3ea3a" value="/sessions/44fd710f-4db2-435f-93eb-72394a24d78d" />
         <entry key="3a7debf0-7bcb-49e0-b784-e601ba715033" value="/sessions/32f2a348-90e3-4521-824e-6d07603aaa88" />
         <entry key="3c2a141d-0a27-4fb6-991f-1657026bf3ae" value="/sessions/8df8bc50-f379-46ad-bfb1-e8ed511bf3ec" />
+        <entry key="4043b87f-8cb6-4f73-b5d6-d448a99228aa" value="/sessions/109f113b-66e7-467a-89d9-09229859a7d7" />
         <entry key="454ece3e-635e-447b-b5ff-bdfd66ad9c3e" value="/sessions/new" />
         <entry key="49c08220-d837-4cee-8232-dae3f6882ab9" value="/sessions/9c2560ea-4359-4adc-b091-1072a5fc5651" />
+        <entry key="4b0a9647-b6b5-4fb5-941b-97e6e07acd9c" value="/sessions/6c871551-a910-4f28-9829-672c05c58534" />
         <entry key="5d86e66b-0534-431f-9bd0-1c207bf57f1b" value="/sessions/ab7276ba-a929-4e90-8d2c-e4023cf822cc" />
         <entry key="61aad486-defb-4f61-b9c5-891f2a4535a5" value="/sessions/ae252f50-14c0-4441-949b-d945c8638719" />
         <entry key="663a44f4-1582-4488-8ec9-64f72e8d305b" value="/sessions/c84fc4ce-30a1-45d3-8f45-0d4eea33df10" />
         <entry key="67342734-3e91-490a-8d20-8e2681d1a3e4" value="/sessions/075ffa00-82a5-44e0-9350-7fd966851a57" />
         <entry key="67fa55ad-ba32-4430-af66-61c5dce30e82" value="/sessions/594e571c-1c05-4f3b-96c6-5e5d252908fb" />
         <entry key="6dadd9ab-0bb0-4334-8a47-290b2e985ba2" value="/sessions/5d923b8c-7a82-4f71-99a9-36bf36fcc123" />
+        <entry key="78d90400-71c3-4238-9488-79f59616aad0" value="/sessions/8c45e4b2-a06c-4091-9e0c-c804a19c10e7" />
+        <entry key="7e409dee-ed7f-4c36-bce1-b9ff0c7cbc17" value="/sessions/842f89f4-de65-4a5f-8d3f-e54846146910" />
         <entry key="827c965e-b4bc-4fbf-98db-b13de1916a9b" value="/sessions/5fc00d66-0238-46ca-bc31-0e1a6e2e4ad0" />
         <entry key="8a094593-3461-47a6-9b66-78dca648b64b" value="/sessions/0963c85c-aae8-4a4e-9ba5-7fa44091d098" />
         <entry key="8bb76cfb-ae34-4c84-baf0-3a840e845729" value="/sessions/fd3e6086-96f1-4d05-8dc3-b82e52c7728a" />
@@ -92,14 +113,19 @@
         <entry key="9c89ce7e-f955-4ed4-8152-b6ecc21df458" value="/sessions/a91b4997-538e-4854-8166-2d418a0420b1" />
         <entry key="a918ba85-8d29-471b-8fa6-7107fea93717" value="/sessions/4af99773-3404-41d8-b952-b52c381c1da5" />
         <entry key="a927ce8c-6b91-4af0-9a07-4f5a8fd1103b" value="/sessions/new" />
+        <entry key="ad9340f7-4c06-4def-b469-895fffe45e1e" value="/sessions/079417ff-cfe2-466e-a92f-25f0dca98ca7" />
         <entry key="af128b6f-c2b7-43a7-a196-5f76053ebfc7" value="/sessions/31160586-45b6-452f-bc18-69d4970ad1e8" />
+        <entry key="b1136582-d1d3-40d2-adf5-7c43790ef752" value="/sessions/8a6728e9-f418-4724-b2f2-0f571a65101d" />
         <entry key="bd7ccdf2-d14d-4f22-9920-2d26c2cb4c38" value="/sessions/f5abc6e0-f4cb-4d96-8783-baba566b510f" />
         <entry key="be62dab6-4a85-4d7c-b4b0-170ef2e09b8a" value="/sessions/ccf7f9cc-08c9-47c1-b25b-63319397850e" />
+        <entry key="be93e569-fd69-4072-9745-674544b3846f" value="/sessions/0cc97110-92e2-48a3-8b50-21d7137c856a" />
         <entry key="c5fba1af-c7f2-40de-a80c-18a34868626d" value="/sessions/b1cd52cc-2c3e-4e8b-ae04-eb8fafd07109" />
         <entry key="c7574a87-f21e-4f56-8bd0-41050fd6b1f8" value="/sessions/3f02e80d-2b3a-466b-9d1c-61f008821857" />
         <entry key="d542786d-ceb7-492a-80cb-15ef1405ddd0" value="/sessions/ba838757-7bb4-431e-a784-918cedfcb3d5" />
         <entry key="d78788ac-ed5e-4398-bd68-08fe32633dba" value="/sessions/b0205fdd-f3b9-4f7c-ac14-7f3fa87b22e5" />
         <entry key="dc0b99ba-531e-4ffe-b4ac-5b0fc2576d23" value="/sessions/51c9a3a8-8083-488d-a65d-59f3c5eaf5ad" />
+        <entry key="de5a83fb-8d85-42ce-b081-2f493fd430c9" value="/sessions/705115cd-b9fa-4368-b165-aabe637bf430" />
+        <entry key="e2ec4faf-bdbe-42a4-9822-a34d6e77f70c" value="/sessions/ccdf89b7-57dc-4aee-bed6-af6d14c1e569" />
         <entry key="eba8625b-6deb-43ed-a006-a08dbd1f812c" value="/sessions/2f4c5cb5-40db-42b2-b6f3-720a593aef15" />
         <entry key="ee314030-fe43-4de6-a094-313437567457" value="/sessions/dcaec939-d304-444b-bad1-cf22bdf72e23" />
       </map>
@@ -110,11 +136,14 @@
         <entry key="04d6160c-4d05-458c-9274-ac4d9b777ba0" value="add another test case for checking buttons and add" />
         <entry key="06eb76dc-ecd6-43c5-a870-0a65aa494b66" value="$PROJECT_DIR$/.venv/bin/python" />
         <entry key="0c705819-5be0-4377-a92f-896346d597d9" value="$PROJECT_DIR$/.venv/bin/python" />
+        <entry key="0db4c93a-dfc2-4321-b3c5-5d718a6b45d3" value="Japan_test_cycle repo migration" />
+        <entry key="0e833739-034f-4ac1-acdb-8155b1247959" value="$PROJECT_DIR$/.venv/bin/python" />
         <entry key="0f72511a-3f25-4de5-9324-e71190c700dc" value="what is this assistant_app_page?" />
         <entry key="19e3b614-bc8a-432f-9dc8-ca13f56f1344" value="$PROJECT_DIR$/.venv/bin/python" />
         <entry key="1aaa0196-2456-4a63-813a-961322746723" value="$PROJECT_DIR$/.venv/bin/python" />
         <entry key="1c41b6b7-1c71-459c-b6f7-7eaf45ccfde9" value="add another test case sms_mms_check send message f" />
         <entry key="1d623e2a-9c22-4439-bfd3-a82c2f1b3edf" value="$PROJECT_DIR$/.venv/bin/python" />
+        <entry key="2460eb29-e4fe-40fc-a7c8-7e0e2f1a80ec" value="$PROJECT_DIR$/.venv/bin/python" />
         <entry key="24d44d9e-dcf5-4283-acea-377dc198f2c1" value="Claude Code" />
         <entry key="26829463-0dec-469c-977b-837c46c46092" value="$PROJECT_DIR$/.venv/bin/python" />
         <entry key="2697dc6c-281b-46f0-be8c-0154807fae19" value="$PROJECT_DIR$/.venv/bin/python" />
@@ -122,18 +151,23 @@
         <entry key="2b0f4fb7-194a-4750-82b5-9c69b60b8855" value="$PROJECT_DIR$/.venv/bin/python" />
         <entry key="2d8c61c7-ada6-4306-8899-8b3038408a22" value="The default interactive shell is now zsh. To updat" />
         <entry key="2f0c1175-9fc5-4c09-8828-b9b26dc59f28" value="where is merge call test" />
+        <entry key="355adb6f-d2e2-4af2-a01a-84e6f0ea2c16" value="$PROJECT_DIR$/.venv/bin/python" />
         <entry key="3675757b-5833-4ffc-950f-2cab28530851" value="The user selected the lines 1 to 79 from tests/tes" />
         <entry key="36e767e5-3775-4869-a016-d0e575a3ea3a" value="where is user_cred.json file?" />
         <entry key="3a7debf0-7bcb-49e0-b784-e601ba715033" value="how to add credentials" />
         <entry key="3c2a141d-0a27-4fb6-991f-1657026bf3ae" value="test_check_dnd_department case location" />
+        <entry key="4043b87f-8cb6-4f73-b5d6-d448a99228aa" value="$PROJECT_DIR$/.venv/bin/python" />
         <entry key="454ece3e-635e-447b-b5ff-bdfd66ad9c3e" value="Claude Code" />
         <entry key="49c08220-d837-4cee-8232-dae3f6882ab9" value="$PROJECT_DIR$/.venv/bin/python" />
+        <entry key="4b0a9647-b6b5-4fb5-941b-97e6e07acd9c" value="test_call_and_transcription in test_call_transcrip" />
         <entry key="5d86e66b-0534-431f-9bd0-1c207bf57f1b" value="in the saarch box we need to type/send Lite 2" />
         <entry key="61aad486-defb-4f61-b9c5-891f2a4535a5" value="$PROJECT_DIR$/.venv/bin/python" />
         <entry key="663a44f4-1582-4488-8ec9-64f72e8d305b" value="Local japan_test_cycle branch checkout" />
         <entry key="67342734-3e91-490a-8d20-8e2681d1a3e4" value="after attending the call need to cl;ick on transfe" />
         <entry key="67fa55ad-ba32-4430-af66-61c5dce30e82" value="The user selected the lines 1 to 72 from tests/tes" />
         <entry key="6dadd9ab-0bb0-4334-8a47-290b2e985ba2" value="after entering the letter in input please click on" />
+        <entry key="78d90400-71c3-4238-9488-79f59616aad0" value="Call transcription Playwright test" />
+        <entry key="7e409dee-ed7f-4c36-bce1-b9ff0c7cbc17" value="Pytest codegen command" />
         <entry key="827c965e-b4bc-4fbf-98db-b13de1916a9b" value="saerch for lite 2 user after login then send the m" />
         <entry key="8a094593-3461-47a6-9b66-78dca648b64b" value="Lite 1 outbound call test failure" />
         <entry key="8bb76cfb-ae34-4c84-baf0-3a840e845729" value="it is pass know, after the user 3 attend the call" />
@@ -143,14 +177,19 @@
         <entry key="9c89ce7e-f955-4ed4-8152-b6ecc21df458" value="$PROJECT_DIR$/.venv/bin/python" />
         <entry key="a918ba85-8d29-471b-8fa6-7107fea93717" value="Test_department_voicemail user 3 call" />
         <entry key="a927ce8c-6b91-4af0-9a07-4f5a8fd1103b" value="Claude Code" />
+        <entry key="ad9340f7-4c06-4def-b469-895fffe45e1e" value="Incoming call answer blocked by overlay" />
         <entry key="af128b6f-c2b7-43a7-a196-5f76053ebfc7" value="$PROJECT_DIR$/.venv/bin/python" />
+        <entry key="b1136582-d1d3-40d2-adf5-7c43790ef752" value="Call transcription test failure" />
         <entry key="bd7ccdf2-d14d-4f22-9920-2d26c2cb4c38" value="remove whatever you added" />
         <entry key="be62dab6-4a85-4d7c-b4b0-170ef2e09b8a" value="$PROJECT_DIR$/.venv/bin/python" />
+        <entry key="be93e569-fd69-4072-9745-674544b3846f" value="$PROJECT_DIR$/.venv/bin/python" />
         <entry key="c5fba1af-c7f2-40de-a80c-18a34868626d" value="$PROJECT_DIR$/.venv/bin/python" />
         <entry key="c7574a87-f21e-4f56-8bd0-41050fd6b1f8" value="The user selected the lines 1 to 750 from tests/te" />
         <entry key="d542786d-ceb7-492a-80cb-15ef1405ddd0" value="install jave using brew" />
         <entry key="d78788ac-ed5e-4398-bd68-08fe32633dba" value="$PROJECT_DIR$/.venv/bin/python" />
         <entry key="dc0b99ba-531e-4ffe-b4ac-5b0fc2576d23" value="Test_departent_voicemail" />
+        <entry key="de5a83fb-8d85-42ce-b081-2f493fd430c9" value="$PROJECT_DIR$/.venv/bin/python" />
+        <entry key="e2ec4faf-bdbe-42a4-9822-a34d6e77f70c" value="$PROJECT_DIR$/.venv/bin/python" />
         <entry key="eba8625b-6deb-43ed-a006-a08dbd1f812c" value="Pytest codegen www.dialpadbeta.com" />
         <entry key="ee314030-fe43-4de6-a094-313437567457" value="Playwrite codegen command" />
       </map>

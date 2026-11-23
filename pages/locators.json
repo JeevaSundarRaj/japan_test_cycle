@@ -1,4 +1,5 @@
 {
+  "transcriptLine": "//*[contains(@data-qa,'transcript')]",
   "makeCallButton": "//button[@data-qa='header-cta-call']",
   "callSearch": "//input[@id='search-input']",
   "hangUpButton": "//*[@data-name='Phone Hang Up']",

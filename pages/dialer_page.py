@@ -25,12 +25,80 @@ class DialerPage:
         self.transfer_search = page.locator(LOCATORS["transferSearch"])
         self.transfer_confirm = page.get_by_role("button", name="そのまま転送")
 
-    def call(self, name: str, locator: str = "callResult") -> None:
+    def set_caller_id(self, persona: str) -> None:
+        """Switch the persona (caller ID) shown in the call dialog."""
+        button = self.page.get_by_role("button", name=re.compile("現在のペルソナは"))
+        # Already selected: opening the dropdown would only cover the label.
+        if persona in (button.get_attribute("aria-label") or button.inner_text()):
+            return
+        button.click()
+        # The button's own label matches the text too; the dropdown option is the last match.
+        self.page.get_by_text(persona, exact=True).last.click()
+
+    def restore_caller_id(self, persona: str) -> None:
         self.make_call_button.click()
-        self.call_search.fill(name)
+        self.set_caller_id(persona)
+        self.close_new_call_overlay()
+
+    def close_new_call_overlay(self) -> None:
+        """The new-call search overlay intercepts clicks (e.g. on the incoming-call Answer button)."""
+        overlay = self.page.locator("#overlay.app-overlay-newcall")
+        for _ in range(3):
+            if not overlay.count() or not overlay.is_visible():
+                return
+            self.page.keyboard.press("Escape")
+            try:
+                overlay.wait_for(state="hidden", timeout=2000)
+                return
+            except PlaywrightTimeoutError:
+                pass
+        expect(overlay).to_be_hidden(timeout=5000)
+
+    def expect_ai_on(self, timeout: int = 30000) -> None:
+        expect(self.ai_button).to_have_text(re.compile(r"^\s*AI\s*$", re.I), timeout=timeout)
+
+    def ensure_ai_on(self) -> None:
+        """Turn AI on from the call bar if it reads 'AI OFF', then confirm it reads 'AI'."""
+        expect(self.ai_button).to_be_visible(timeout=30000)
+        if not self.is_ai_on():
+            self.ai_button.click()
+            enable = self.page.locator(LOCATORS["aiEnableButton"]).first
+            try:
+                enable.click(timeout=5000)
+            except PlaywrightTimeoutError:
+                switch = self.page.get_by_role("switch", name=re.compile("Aiが有効"))
+                if switch.count() and not switch.first.is_checked():
+                    switch.first.click()
+        self.expect_ai_on()
+
+    def expect_transcribing(self, timeout: int = 60000) -> None:
+        # The AI dialog's トランスクリプト tab panel fills with text once audio is transcribed.
+        panel = self.page.get_by_role("tabpanel", name="トランスクリプト")
+        # Click the AI button to open the AI dialog (skip if ensure_ai_on left it open).
+        if not panel.is_visible():
+            self.ai_button.click()
+            expect(panel).to_be_visible(timeout=15000)
+        expect(panel).to_have_text(re.compile(r"\S{5,}"), timeout=timeout)
+
+    def call(self, name: str, locator: str = "callResult", caller_id: str | None = None) -> None:
+        # Pages sharing a browser are throttled in the background; focus this one first.
+        self.page.bring_to_front()
+        self.dismiss_wrap_up(timeout=1500)
+        self.make_call_button.click()
+        if caller_id:
+            self.set_caller_id(caller_id)
         # The first DOM match can be a hidden duplicate row; click the visible one.
         result = self.page.locator(LOCATORS[locator].format(name if locator == "callResult" else name.lower()))
-        result.filter(visible=True).first.click()
+        for attempt in range(3):
+            self.call_search.click()
+            self.call_search.fill("")
+            self.call_search.press_sequentially(name, delay=50)
+            try:
+                result.filter(visible=True).first.click(timeout=10000)
+                return
+            except PlaywrightTimeoutError:
+                if attempt == 2:
+                    raise
 
     def call_number(self, number: str) -> None:
         """Dial a raw phone number (e.g. a main line) from the call search box."""
@@ -79,7 +147,14 @@ class DialerPage:
         expect(popup).to_be_visible(timeout=timeout)
 
     def answer(self) -> None:
-        self.answer_button.click()
+        self.close_new_call_overlay()
+        # Backgrounded/occluded headed windows stop rendering frames, which hangs Playwright's
+        # scroll-into-view step; focus the page first and fall back to a DOM click.
+        self.page.bring_to_front()
+        try:
+            self.answer_button.click(timeout=5000)
+        except PlaywrightTimeoutError:
+            self.answer_button.dispatch_event("click")
         expect(self.active_call.or_(self.hangup_button).first).to_be_visible(timeout=15000)
 
     def merge(self) -> None:
@@ -107,6 +182,54 @@ class DialerPage:
         self.hangup_button.click()
         expect(self.hangup_button).to_be_hidden()
 
+    def dismiss_wrap_up(self, timeout: int = 5000) -> None:
+        """Close the post-call wrap-up modal if it shows; it blocks the call button."""
+        modal = self.page.locator("dialog.post-call-wrap-up-modal[open]")
+        try:
+            modal.wait_for(state="visible", timeout=timeout)
+        except PlaywrightTimeoutError:
+            return
+        self.page.keyboard.press("Escape")
+        if modal.is_visible():
+            # The form is rendered inside an iframe ("document" in the aria tree), so try both roots.
+            for root in (modal, modal.frame_locator("iframe")):
+                self._fill_wrap_up_call_type(root)
+                close = root.locator("button:not([disabled])").filter(
+                    has_text=re.compile("閉じる|キャンセル|スキップ|完了|保存|Close|Skip|Done|Save", re.I))
+                try:
+                    close.first.click(timeout=3000)
+                    break
+                except PlaywrightTimeoutError:
+                    pass
+            if modal.is_visible():
+                # Last resort: the dialog's own X button ("Click to close").
+                x_btn = modal.get_by_role("button", name=re.compile("close", re.I)).or_(
+                    modal.locator("[data-qa='dt-modal-close']"))
+                try:
+                    x_btn.first.click(timeout=3000, force=True)
+                except PlaywrightTimeoutError:
+                    pass
+        expect(modal).to_be_hidden(timeout=10000)
+
+    def _fill_wrap_up_call_type(self, modal) -> None:
+        """通話タイプ is required; 完了 stays disabled until one is picked."""
+        done = modal.get_by_role("button", name="完了")
+        try:
+            # Quick pick from the "最もよく使用" suggestions, else choose the first dropdown option.
+            suggestion = modal.get_by_text("最もよく使用").locator("xpath=..").locator("a, button, [role=button], [role=link]").first
+            suggestion.click(timeout=2000)
+            expect(done).to_be_enabled(timeout=2000)
+            return
+        except (PlaywrightTimeoutError, AssertionError):
+            pass
+        try:
+            field = modal.get_by_placeholder("2個まで入力できます")
+            field.click(timeout=2000)
+            modal.get_by_role("option").first.click(timeout=3000)
+            expect(done).to_be_enabled(timeout=2000)
+        except (PlaywrightTimeoutError, AssertionError):
+            pass
+
     def hang_up_group_call(self) -> None:
         # The first hang-up only drops the added user; the original 2-party call remains.
         self.hangup_button.click()
@@ -119,6 +242,13 @@ class DialerPage:
         done = self.page.get_by_text("完了", exact=True).last
         done.click(timeout=15000)
         expect(done).to_be_hidden(timeout=10000)
+
+    def set_muted(self, muted: bool) -> None:
+        """Mute/unmute the mic from the call bar (no-op if already in the wanted state)."""
+        wanted, current = ("ミュート解除", "ミュート") if muted else ("ミュート", "ミュート解除")
+        if self.callbar_button(current).is_visible():
+            self.callbar_button(current).click()
+        expect(self.callbar_button(wanted)).to_be_visible(timeout=10000)
 
     def callbar_button(self, label: str):
         return self.page.locator(LOCATORS["callbarButton"].format(label))
