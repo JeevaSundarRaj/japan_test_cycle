@@ -24,9 +24,18 @@ jobs:
           sudo apt-get install -y ffmpeg xvfb
 
       - name: Write credentials
-        run: echo '${{ secrets.CREDENTIALS_JSON }}' > credentials.json
+        env:
+          CREDENTIALS_JSON: ${{ secrets.CREDENTIALS_JSON }}
+        run: |
+          if [ -z "$CREDENTIALS_JSON" ]; then
+            echo "::error::Secret CREDENTIALS_JSON is empty or not set (Settings > Secrets and variables > Actions)"
+            exit 1
+          fi
+          printf '%s' "$CREDENTIALS_JSON" > credentials.json
+          python -c "import json; json.load(open('credentials.json'))"
 
       # pytest.ini uses --headed, so run under a virtual display.
+      # Transcription summary test depends on the call test, so keep file order.
       - name: Run tests
         run: xvfb-run -a pytest -p no:randomly
 
@@ -37,4 +46,3 @@ jobs:
           name: screenshots
           path: screenshots/
           if-no-files-found: ignore
-
